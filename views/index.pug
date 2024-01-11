@@ -6,3 +6,8 @@ html(lang='en')
    body
       h1= title
       p Welcome to #{title}
+      each message in messages
+         div
+            h2= message.user
+            p= message.text
+            p= message.added
