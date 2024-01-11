@@ -1,0 +1,15 @@
+doctype html
+html
+   head
+      title New message
+      link(rel='stylesheet' href='/stylesheets/style.css')
+   body
+      h1 New message
+      form(method='POST' action='/new')
+         label(for='author') Author:
+         input(type='text' id='author' name='author')
+         br
+         label(for='message') Message:
+         input(type='text' id='message' name='message')
+         input(type='submit' value='Submit')
+

@@ -6,6 +6,7 @@ html(lang='en')
    body
       h1= title
       p Welcome to #{title}
+      a(href='/new') New message
       each message in messages
          div
             h2= message.user
